@@ -31,7 +31,7 @@ class AppState extends EventEmitter {
       company: 'Harris Rebar',
       position: 'Shearhand',
       salary: 40000,
-      logo: '//placehold.it/200x200',
+      logo: 'https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/b3a08e3211b313dd609d6af1645391d8',
       description: 'Not a great work enviornment. Be prepared to break-down your body and not be able to enjoy your retirement!'
     }),
     
@@ -39,7 +39,7 @@ class AppState extends EventEmitter {
       company: 'Admiral Beverage',
       position: 'Labeler',
       salary: 30000,
-      logo: '//placehold.it/200x200',
+      logo: 'https://www.designyourway.net/blog/wp-content/uploads/2018/07/maxresdefault-1.jpg',
       description: 'Try to stay awake during your 12 hour night shift! This place has it all; zero fun, zero PTO and only one fatality so far this year.'
     })
 ]
