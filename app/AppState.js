@@ -2,6 +2,7 @@ import Job from "./Models/Job.js"
 import Car from "./Models/Car.js"
 import { EventEmitter } from "./Utils/EventEmitter.js"
 import { isValidProp } from "./Utils/isValidProp.js"
+import House from "./Models/House.js"
 
 class AppState extends EventEmitter {
 
@@ -42,7 +43,24 @@ class AppState extends EventEmitter {
       logo: 'https://www.designyourway.net/blog/wp-content/uploads/2018/07/maxresdefault-1.jpg',
       description: 'Try to stay awake during your 12 hour night shift! This place has it all; zero fun, zero PTO and only one fatality so far this year.'
     })
-]
+  ]
+
+  /**@type {House[]} */
+  houses = [
+    new House({
+      realtor: 'Boise Realtors',
+      price: 500000,
+      description: 'This beautiful 1-bedroom 0-bathroom cardboard box is the perfect fixer-upper!'
+      imgUrl: '//placehold.it/200x200'
+    }),
+
+    new House({
+      realtor: 'Johnsons Meridian Homes',
+      price: 800000,
+      description: 'Come take a look at this beautiful, 6-bedroom 12-bathroom manufactured home on .001 acres. Own a little slice of Meridian.',
+      imgUrl: '//placehold.it/200x200'
+    })
+  ]
 
 
 }
