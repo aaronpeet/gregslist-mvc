@@ -24,7 +24,24 @@ class AppState extends EventEmitter {
       imgUrl: 'https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/07/Gremlin-X.jpg'
     })
   ]
-
+//NOTE: possibly need to put in @type {Job[]}???????
+  jobs = [
+    new Job({
+      company: 'Harris Rebar',
+      position: 'Shearhand',
+      salary: 40000,
+      logo: '//placehold.it/200x200',
+      description: 'Not a great work enviornment. Be prepared to break-down your body and not be able to enjoy your retirement!'
+    }),
+    
+    new Job({
+      company: 'Admiral Beverage',
+      position: 'Labeler',
+      salary: 30000,
+      logo: '//placehold.it/200x200',
+      description: 'Try to stay awake during your 12 hour night shift! This place has it all; zero fun, zero PTO and only one fatality so far this year.'
+    })
+]
 
 
 }
