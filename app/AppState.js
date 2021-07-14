@@ -1,3 +1,4 @@
+import Job from "./Models/Job.js"
 import Car from "./Models/Car.js"
 import { EventEmitter } from "./Utils/EventEmitter.js"
 import { isValidProp } from "./Utils/isValidProp.js"
@@ -23,6 +24,8 @@ class AppState extends EventEmitter {
       imgUrl: 'https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/07/Gremlin-X.jpg'
     })
   ]
+
+
 
 }
 
