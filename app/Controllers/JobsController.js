@@ -1,11 +1,10 @@
 import { ProxyState } from "../AppState.js";
-import { carsService } from "../Services/CarsService.js";
-import { jobsService } from "../Services/JobsService.js"
+import { jobsService } from "../Services/JobsService.js";
 
 function _draw() {
     let template = ''
-    ProxyState.jobs.forEach(jobs => {
-        template += car.Template
+    ProxyState.jobs.forEach(job => {
+        template += job.Template
     })
     document.getElementById('jobs').innerHTML = template
 }
@@ -26,6 +25,8 @@ export default class JobsController{
             logo: form.logo.value,
             description: form.description.value
         }
+        jobsService.createJob(rawJob)
+        form.reset()
 }
 
 }

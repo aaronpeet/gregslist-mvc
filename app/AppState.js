@@ -24,7 +24,8 @@ class AppState extends EventEmitter {
       imgUrl: 'https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/07/Gremlin-X.jpg'
     })
   ]
-//NOTE: possibly need to put in @type {Job[]}???????
+
+  /** @type {Job[]} */
   jobs = [
     new Job({
       company: 'Harris Rebar',
