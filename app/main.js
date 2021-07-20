@@ -5,7 +5,7 @@ class App {
   // valuesController = new ValuesController()
   carsController = new CarsController()
 
-  jobsController = new JobsController()
+  //jobsController = new JobsController()
 
 }
 

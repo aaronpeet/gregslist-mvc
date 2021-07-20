@@ -1,0 +1,4 @@
+export const api = axios.create({
+    baseURL: 'https://bcw-sandbox.herokuapp.com/api/',
+    setTimeout: 4000
+})

@@ -50,7 +50,7 @@ class AppState extends EventEmitter {
     new House({
       realtor: 'Boise Realtors',
       price: 500000,
-      description: 'This beautiful 1-bedroom 0-bathroom cardboard box is the perfect fixer-upper!'
+      description: 'This beautiful 1-bedroom 0-bathroom cardboard box is the perfect fixer-upper!',
       imgUrl: '//placehold.it/200x200'
     }),
 
