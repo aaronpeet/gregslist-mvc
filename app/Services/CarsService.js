@@ -18,6 +18,13 @@ class CarsService {
 
     ProxyState.cars = res.data.map(car => new Car(car))
   }
+
+  async deleteCar(carId) {
+    const res = await api.delete('cars/' + carId)
+    console.log(res.data)
+    ProxyState.cars = ProxyState.cars.filter(c => c.id != carId)
+
+ }
 }
 
 
