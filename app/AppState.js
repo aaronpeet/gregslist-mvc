@@ -30,18 +30,18 @@ class AppState extends EventEmitter {
   jobs = [
     new Job({
       company: 'Harris Rebar',
-      position: 'Shearhand',
-      salary: 40000,
-      logo: 'https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/b3a08e3211b313dd609d6af1645391d8',
-      description: 'Not a great work enviornment. Be prepared to break-down your body and not be able to enjoy your retirement!'
+      jobTitle: 'Shearhand',
+      rate: 40000,
+      description: 'Not a great work enviornment. Be prepared to break-down your body and not be able to enjoy your retirement!',
+      hours: 40
     }),
     
     new Job({
       company: 'Admiral Beverage',
-      position: 'Labeler',
-      salary: 30000,
-      logo: 'https://www.designyourway.net/blog/wp-content/uploads/2018/07/maxresdefault-1.jpg',
-      description: 'Try to stay awake during your 12 hour night shift! This place has it all; zero fun, zero PTO and only one fatality so far this year.'
+      jobTitle: 'Labeler',
+      rate: 30000,
+      description: 'Try to stay awake during your 12 hour night shift! This place has it all; zero fun, zero PTO and only one fatality so far this year.',
+      hours: 40
     })
   ]
 

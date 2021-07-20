@@ -10,23 +10,29 @@ function _draw() {
 }
 
 export default class JobsController{
+    
     constructor() {
         ProxyState.on('jobs', _draw)
+
     _draw()
     }
 
-    createJob() {
+  async  createJob() {
         event.preventDefault()
         let form = event.target
         let rawJob = {
             company: form.company.value,
-            position: form.position.value,
-            salary: form.salary.value,
-            logo: form.logo.value,
-            description: form.description.value
+            jobTitle: form.jobTitle.value,
+            rate: form.rate.value,
+            description: form.description.value,
+            hours: form.hours.value
         }
-        jobsService.createJob(rawJob)
+      await  jobsService.createJob(rawJob)
         form.reset()
-}
+  }
+    
+    deleteJob(jobId) {
+        jobsService.deleteJob(jobId)
+    }
 
 }

@@ -10,7 +10,7 @@ class CarsService {
 
   async createCar(rawCar) {
     const res = await api.post('cars', rawCar)
-  ProxyState.cars = [...ProxyState.cars, new Car(res.data)]
+    ProxyState.cars = [...ProxyState.cars, new Car(res.data)]
 }
 
   async getAllCars() {
@@ -32,6 +32,7 @@ class CarsService {
     const res = await api.put('cars/' + carId, foundCar)
     ProxyState.cars = ProxyState.cars
   }
+  
 }
 
 
