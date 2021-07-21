@@ -25,4 +25,4 @@ class HomesService{
     }
 }
 
-export const homesService = HomesService()
+export const homesService = new HomesService()

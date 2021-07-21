@@ -34,7 +34,7 @@ export default class Home {
                   <p><b>This is a ${this.bedrooms} bed - ${this.bathrooms} bath - ${this.levels} story home</b></p>
               </div>
               <p>${this.description}</p>
-              <p><em>$${this.price} yearly</em></p>
+              <p><em>$${this.price}</em></p>
               <button class="btn btn-warning btn-block" onclick="app.jobsController.deleteJob('${this.id}')"> delete </button>
           </div>
       </div>
