@@ -2,7 +2,7 @@ import Job from "./Models/Job.js"
 import Car from "./Models/Car.js"
 import { EventEmitter } from "./Utils/EventEmitter.js"
 import { isValidProp } from "./Utils/isValidProp.js"
-import House from "./Models/House.js"
+import Home from "./Models/Home.js"
 
 class AppState extends EventEmitter {
 
@@ -45,17 +45,15 @@ class AppState extends EventEmitter {
     })
   ]
 
-  /**@type {House[]} */
-  houses = [
-    new House({
-      realtor: 'Boise Realtors',
+  /**@type {Home[]} */
+  homes = [
+    new Home ({
       price: 500000,
       description: 'This beautiful 1-bedroom 0-bathroom cardboard box is the perfect fixer-upper!',
       imgUrl: '//placehold.it/200x200'
     }),
 
-    new House({
-      realtor: 'Johnsons Meridian Homes',
+    new Home ({
       price: 800000,
       description: 'Come take a look at this beautiful, 6-bedroom 12-bathroom manufactured home on .001 acres. Own a little slice of Meridian.',
       imgUrl: '//placehold.it/200x200'
